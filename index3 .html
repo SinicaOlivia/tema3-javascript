@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const book = [ { titlu: "Carte 1", autor: "Autor 1", esteCitita: true }, 
+                       { titlu: "Carte 2", autor: "Autor 2", esteCitita: false } ];
+
+        function adaugareCarti(titlu, autor, esteCitita) {
+            book.push({
+                titlu,
+                autor,
+                esteCitita
+            })
+        }              
+        adaugareCarti("Atomic Habits", "James Clear", true);
+        adaugareCarti("Acolo unde canta racii", "Delia Owens", false);
+        console.log(book);
+        
+    
+
+
+
+var testBoolean = true; //true || false
+
+var object = [ { titlu: "Carte 1", autor: "Autor 1", esteCitita: true }, 
+                       { titlu: "Carte 2", autor: "Autor 2", esteCitita: false } ];
+    if(testBoolean !== true){
+      object.esteCitita = 'trebuie citita'
+      //console.log("trebuie sa citesti");
+    }else{
+      object.esteCitita = 'este citita'
+      //console.log("ai citit");
+    }  
+object.esteCitita = testBoolean ? "ai citit deja" : "trebuie sa citesti"
+
+console.log(object);
+
+    </script>
+</body>
+</html>
