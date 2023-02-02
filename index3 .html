@@ -39,8 +39,32 @@ var object = [ { titlu: "Carte 1", autor: "Autor 1", esteCitita: true },
       //console.log("ai citit");
     }  
 object.esteCitita = testBoolean ? "ai citit deja" : "trebuie sa citesti"
-
 console.log(object);
+
+////new solution:
+
+function booksDetails(book) {
+    const bookDetail = '${book.title} by ${book.author}';
+    console.log(bookDetail)
+
+    if(book.isRead) {
+        console.log('you have already read the ${bookDetail}')
+    } else {
+        console.log('You have to read this ${bookDetail}')
+    }
+}
+
+function bookList(input) {
+    input.forEach(booksDetails);
+}
+
+const bookList1 = [{title: "Book 1", author: "Author 1", isRead: true},
+                   {title: "Book 2", author: "Author 2", isRead: false},]
+
+bookList(bookList1);   
+         
+
+
 
     </script>
 </body>
